@@ -1,0 +1,322 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+@media(max-width:500px){
+    
+    .navbar-expand-lg .navbar-nav{
+        align-items: center;
+
+    }
+    
+    .navbar-expand-lg .navbar-nav .nav-link{
+        padding: 0px;
+        font-size: .575rem;
+        line-height: 1.3rem;
+    }
+    .main-btn{
+        font-size: .675rem;
+        padding: 3px;
+    }
+    .navbar-expand-lg a{
+        font-size: 15px;
+    }
+   .carousel-caption h5{
+       font-size: 17px;
+       margin-top: 40px;
+   }
+   .carousel-caption p{
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 4px;
+   }
+   
+}
+/*banner*/
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 1px;
+}
+.carousel-caption .btn{
+    margin-top: 14px;
+    padding: 2px;
+    font-size: 13px;
+}
+.carousel-caption h5{
+    font-size: 29px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 13px;
+}
+.carousel-item .w-100{
+    height: 100vh;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0,0.5);
+    z-index: 1;
+}
+
+@media only screen and (max-width:992px){
+    .carousel-caption{
+        margin-bottom: 220px;
+    }
+    
+   
+   
+}
+
+@media only screen and (max-width:576px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 240px;
+    }
+    .carousel-caption p{
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 15px;
+
+    }
+    .carousel-caption h5{
+        font-size: 19px;
+    }
+    .carousel-caption .btn{
+        font-size: 11px;
+        padding: 1px;
+    }
+}
+@media only screen and (max-width:576px){
+    .carousel-caption{
+        margin-bottom: 60px;
+    }
+}
+@media only screen and (max-width:280px){
+    .carousel-caption{
+        margin-bottom: 20px;
+    }
+}
+
+/*room*/
+.room_wrapper .room-item{
+    position: relative;
+    overflow: hidden;
+}
+.room_wrapper .room-item img{
+    width: 100%;
+    -webkit-transition: all 400ms ease-in 0s;
+    transition: all 400ms ease-in 0s;
+}
+.room_wrapper .room-item:hover img{
+    -webkit-transform:scale3d(1.05,1.05,1.05) ;
+    transform:scale3d(1.05,1.05,1.05);
+}
+.room_wrapper .room-item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: all 400ms ease-in 0s;
+    transition: all 400ms ease-in 0s;
+}
+.room_wrapper .room-item:hover::before{
+    opacity: .9;
+
+}
+
+.room_wrapper .room-item-wrap{
+    position: absolute;
+    left: 1.875rem;
+    right: 1.875rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.room_wrapper .room-item .room-content{
+    -webkit-transform:scale3d(1.2,1.2,1.2) ;
+    transform: scale3d(1.2,1.2,1.2);
+    transition: all 500ms ease-in 0s;
+    opacity: 0;
+}
+
+.room_wrapper .room-item:hover .room-content{
+    -webkit-transform: scale3d(1,1,1) ;
+    transform: scale3d(1,1,1);
+    opacity: 1;
+}
+
+@media only screen and (max-width:300px){
+  .room-item .room-content p{
+    font-size: 8px;
+    line-height: 8px;
+  }
+  .room-item .room-content h6{
+    font-size: 10px;
+    margin-top: 18px;
+  }
+  .room-item .room-content a{
+    font-size: 7px;
+    line-height: 2px;
+    margin-bottom: px;
+  }
+  .room-item .room-content .fw-bold{
+    line-height: 3px;
+  }
+  .room-content{
+    padding: 19px;
+  }
+ 
+
+}
+@media only screen and (min-width:767px){
+    .room-content h6{
+        line-height: 5px;
+    }
+    .room-item .room-content p{
+        font-size: 9px;
+        line-height: 10px;
+        letter-spacing: 1px;
+        margin-top: 12px;
+    }
+    .room-item .room-content a{
+        margin-bottom: 3px;
+    }
+    .room-item .room-content .fw-bold{
+        margin-bottom: 9px;
+    }
+}
+
+.room-content{
+    border: 1px solid white;
+    padding: 7px;
+}
+.room-content h6{
+    font-size: 17px;
+    margin-top: 9px;
+}
+.room-content p{
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-weight: 100;
+}
+.room-content a{
+    padding: 3px;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+/*team css*/
+.team_wrapper .card{
+    position: relative;
+    overflow: hidden;
+  
+}
+
+ .team_wrapper .card .team-infos{
+    background-color: rgba(204, 118, 20, 0.774);
+    bottom: 0;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: -4.675rem;
+    transition: all 0.3s ease-in-out;
+    
+}
+.team_wrapper .card:hover .team-infos{
+    margin-bottom: 0;
+}
+.team_wrapper .team-infos h5{
+    margin-bottom: 1px;
+}
+.team_wrapper .team-infos .social-network{
+    transition: all 0.3s ease-in-out;
+    list-style: none;
+    width: 100%;
+    margin:1.25rem -1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.team_wrapper .team-infos ul a{
+   width: 2rem;
+   height: 2rem;
+   line-height: 2rem;
+   font-size: .75rem;
+   display: block;
+   border: 1px solid rgb(224, 223, 230);
+}
+/*gallery*/
+.gallery_wrapper{
+    box-shadow: 0 0 .1875rem rgba(0, 0, 0,0.3);
+    overflow: hidden;
+    position: relative;
+}
+.gallery_wrapper .gallery-item::before,
+.gallery_wrapper .gallery-item::after,
+.gallery_wrapper .gallery-content::before,
+.gallery_wrapper .gallery-content::after,
+/*pricing*/
+.card .btn{
+    font-size: 12px;
+    margin-top: 19px;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 8px;
+}
+.card .list-unstyled li p{
+    font-size: 13px;
+    line-height: 9px;
+}
+.card h5{
+    margin-top: 8px;
+}
+.card .fw-bold{
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+.card{
+    margin: 3px;
+    box-shadow: rgba(0, 0, 0,0.3);
+}
+.card:hover{
+    background-color: rgba(238, 23, 148, 0.767);
+    color: white;
+}
+/* footer */
+.katji p{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+ 
+
+
+
+
+   
+
+   
+
